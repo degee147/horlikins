@@ -1,8 +1,8 @@
 <!-- Include Youmax -->
-<script src="assets/youmax/jquery.youmax.min.js"></script>
+<script src="assets/plugins/youmax/jquery.youmax.min.js"></script>
 
 <!-- Include Youmax Styles -->
-<link rel="stylesheet" href="assets/youmax/youmax_trend.min.css"/>
+<link rel="stylesheet" href="assets/plugins/youmax/youmax_trend.min.css"/>
 <!-- Internal Page Header -->
 <div class="internal-page-title about-page" data-parallax="scroll" data-image-src="assets/img/internal-header.jpg">
     <h1>Podcast - <span>Horlikins</span></h1>

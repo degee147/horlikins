@@ -394,7 +394,7 @@ myApp.controller('BookingController', ['$scope','$rootScope','$stateParams','$ht
 
 
         $('#response').block({
-            message: '<p style="margin-bottom:0;"><img src="images/loading.gif" />Checking..</p>',
+            message: '<p style="margin-bottom:0;"><img src="assets/img/loading.gif" />Checking..</p>',
             css: { border: '3px solid #90C3D4' },
             cursorReset: 'default'
         });
@@ -556,7 +556,7 @@ myApp.controller('BookingController', ['$scope','$rootScope','$stateParams','$ht
 
 
         $('#CompleteBookingResponse').block({
-            message: '<p style="margin-bottom:0;"><img src="images/loading.gif" />Processing..</p>',
+            message: '<p style="margin-bottom:0;"><img src="assets/img/loading.gif" />Processing..</p>',
             //  css: { border: '3px solid #90C3D4' },
             cursorReset: 'default'
         });

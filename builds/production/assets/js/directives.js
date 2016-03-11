@@ -1,0 +1,1 @@
+myApp.directive("ngSpinnerBar",["$rootScope",function(n){return{link:function(e,t,a){t.addClass("hide"),n.$on("$stateChangeStart",function(){t.removeClass("hide")}),n.$on("$stateChangeSuccess",function(){t.addClass("hide")}),n.$on("$stateNotFound",function(){t.addClass("hide")}),n.$on("$stateChangeError",function(){t.addClass("hide")})}}}]);

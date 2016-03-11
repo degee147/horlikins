@@ -20,7 +20,7 @@
 	<!-- Inner section -->
 	<div class="inner-content">
 		<div class="">
-			<img src="images/gallery/DSC_0733-Edit.jpg" alt="Welcome to Horlikins" style="border-width: 15px; border-style: groove;">
+			<img src="assets/img/gallery/DSC_0733-Edit.jpg" alt="Welcome to Horlikins" style="border-width: 15px; border-style: groove;">
 		</div>
 		<div class="desc">
 			  Horlikin's Events Center is a state-of-the-art facility that seats a vast number of persons. It is handicapped accessible, with a 21st century sound system and also includes special equipment and facilities for that special occasion. It boasts a full range if modern event facilities with a team of professional staff well trained in the details of event planning and management, we help our customers with a wide range of expertise and event options.

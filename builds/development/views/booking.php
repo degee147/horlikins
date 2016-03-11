@@ -278,7 +278,7 @@
                                         <div class="tab-pane fadeInUp clearfix" id="booking-confirmation">
 
                                             <div id="printableArea">
-                                                <img src="images/horlikins/logo.png" alt="Logo" style="float: right;
+                                                <img src="assets/img/horlikins/logo.png" alt="Logo" style="float: right;
                                                                                                        margin-top: -20px;
                                                                                                        margin-right: 50px;">
 

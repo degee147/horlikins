@@ -5,7 +5,8 @@
 
 var myApp = angular.module('myApp', [
     "ui.router",
-    "angularUtils.directives.dirPagination",
+    "angularUtils.directives.dirPagination",,
+    "angular-lazy-loader"
     // "ngRoute",
     // "ui.bootstrap",
     // "oc.lazyLoad"

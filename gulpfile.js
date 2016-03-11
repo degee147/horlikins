@@ -3,14 +3,13 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     gulpif = require('gulp-if'),
     imagemin = require('gulp-imagemin'),
+    pngquant = require('imagemin-pngquant'),
     // pngcrush = require('imagemin-pngcrush'),
     uglify = require('gulp-uglify'),
     minifyHTML = require('gulp-minify-html'),
     cleanCSS = require('gulp-clean-css'),
     connect = require('gulp-connect');
 //browserify = require('gulp-browserify');
-
-
 
 
 var env,
@@ -23,7 +22,7 @@ var env,
 assets = 'builds/development/assets/';
 dev = 'builds/development/';
 
-env = process.env.NODE_ENV || 'development';
+env = process.env.NODE_ENV || 'production';
 
 if (env==='development') {
     outputMain = 'builds/development/';
@@ -45,7 +44,8 @@ jsTopSources = [
     assets + 'js/lib/angular/angular-resource.min.js',
     assets + 'js/lib/angular/angular-animate.min.js',
     assets + 'plugins/ngPaginate/angular-animate.min.js',
-    assets + 'plugins/ngPaginate/dirPagination.js'
+    assets + 'plugins/ngPaginate/dirPagination.js',
+    assets + 'plugins/imgLazyload/angular-lazy-loader.min.js'
 ];
 
 jsBottomSources = [
@@ -70,8 +70,6 @@ gulp.task('log', function() {
     gutil.log("Workflows are awesome");
 });
 
-
-
 gulp.task('js', function() {
     gulp.src(jsTopSources)
         .pipe(concat('scripts_top.js'))
@@ -80,11 +78,20 @@ gulp.task('js', function() {
 
     gulp.src(jsBottomSources)
         .pipe(concat('scripts_bottom.js'))
-        .pipe(gulp.dest(outputMain + 'assets/js'))
         .pipe(gulpif(env === 'production', uglify()))
         .pipe(gulp.dest(outputMain + 'assets/js'));
 });
 
+gulp.task('moveJS', function() {
+    gulp.src(dev + 'assets/js/*.js')
+        .pipe(gulpif(env === 'production', uglify()))
+        .pipe(gulpif(env === 'production', gulp.dest(outputMain + 'assets/js')));
+});
+gulp.task('moveCSS', function() {
+    gulp.src(dev + 'assets/css/*.css')
+        .pipe(gulpif(env === 'production', cleanCSS({compatibility: 'ie8'})))
+        .pipe(gulp.dest(outputMain + 'assets/css'));
+});
 
 gulp.task('css', function() {
     return gulp.src(cssSources)
@@ -96,52 +103,51 @@ gulp.task('css', function() {
 gulp.task('views', function() {
     gulp.src(dev + 'views/*.php')
         .pipe(gulpif(env === 'production', minifyHTML()))
-        .pipe(gulpif(env === 'production', gulp.dest(outputMain + 'views/')));
+        .pipe(gulp.dest(outputMain + 'views/'));
 });
 
-gulp.task('layout', function() {
-    gulp.src('builds/development/layout/*.php')
-        .pipe(gulpif(env === 'production', minifyHTML()))
-        .pipe(gulpif(env === 'production', gulp.dest(outputMain + 'layout/')));
-});
 
 gulp.task('index', function() {
     gulp.src('builds/development/index.php')
-        .pipe(gulpif(env === 'production', minifyHTML()))
-        .pipe(gulpif(env === 'production', gulp.dest(outputMain)))
+    //  .pipe(gulpif(env === 'production', minifyHTML()))
+        .pipe(gulp.dest(outputMain));
 });
 
-//gulp.task('images', function() {
-//    gulp.src('builds/development/images/**/*.*')
-//        .pipe(gulpif(env === 'production', imagemin({
-//        progressive: true,
-//        svgoPlugins: [{ removeViewBox: false }],
-//        use: [pngcrush()]
-//    })))
-//        .pipe(gulpif(env === 'production', gulp.dest(assets + 'images')))
-//        .pipe(connect.reload())
-//});
 
+
+var filesToMove = [
+    dev + 'assets/img/*.*',
+    dev + 'assets/img/**/*.*',
+];
+
+gulp.task('images', () => {
+    return gulp.src(filesToMove, { base: dev + 'assets/img/' })
+        .pipe(imagemin({
+        progressive: true,
+        svgoPlugins: [
+            {removeViewBox: false},
+            {cleanupIDs: false}
+        ],
+        use: [pngquant()]
+    })).pipe(gulpif(env === 'production', gulp.dest(outputMain + 'assets/img')));
+});
 
 gulp.task('watch', function() {
-    gulp.watch(jsSources, ['js']);
-    gulp.watch('builds/development/*.html', ['html']);
-    gulp.watch('builds/development/js/*.json', ['json']);
-    gulp.watch('builds/development/images/**/*.*', ['images']);
+    //    gulp.watch(jsSources, ['js']);
+    //    gulp.watch('builds/development/*.html', ['html']);
+    //    gulp.watch('builds/development/js/*.json', ['json']);
+    //    gulp.watch('builds/development/images/**/*.*', ['images']);
 });
 
 
-gulp.task('default', ['views', 'layout', 'js', 'index', 'watch']);
-
-
-//gulp.src('client/js/**/*.js') // Matches 'client/js/somedir/somefile.js' and resolves `base` to `client/js/`
-//    .pipe(minify())
-//    .pipe(gulp.dest('build'));  // Writes 'build/somedir/somefile.js'
-
-
-//gulp.task('connect', function() {
-//    connect.server({
-//        root: 'builds/development',
-//        livereload: true
-//    });
+//gulp.task('move_img', function () {
+//    // the base option sets the relative root for the set of files,
+//    // preserving the folder structure
+//    gulp.src(filesToMove, { base: dev + 'assets/img/' })
+//        .pipe(gulpif(env === 'production', gulp.dest(outputMain + 'assets/img')));
 //});
+
+
+
+gulp.task('default', ['views', 'moveJS', 'moveCSS', 'css', 'js', 'index', 'images']);
+
