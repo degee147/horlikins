@@ -4,10 +4,10 @@
     <!-- Main Slider -->
     <div id="main-slider">
         <div class="items">
-            <img src="images/slider/crystal-silver-chairs.jpg" alt="3"/><!-- Change the URL section based on your image\'s name -->
+            <img src="../../components/assets/img/slider/crystal-silver-chairs.jpg" alt="3"/><!-- Change the URL section based on your image\'s name -->
         </div>
         <div class="items">
-            <img src="images/slider/outside-view.jpg" alt="3"/>
+            <img src="../../components/assets/img/slider/outside-view.jpg" alt="3"/>
         </div>
         <!--    <div class="items">
 <img src="images/horlikins/img3.jpg" alt="4"/>
@@ -115,8 +115,8 @@
         <ul class="image-main-box clearfix">
             <li class="item col-xs-6 col-md-3 rts">
                 <figure>
-                    <img src="images/gallery/DSC_0722-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0722-Edit.jpg" class="more-details" data-title="Red Table Setup">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0722-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0722-Edit.jpg" class="more-details" data-title="Red Table Setup">Enlarge</a>
                     <figcaption>
                         <h4><span>Red </span> Table Setup</h4>
                     </figcaption>
@@ -124,8 +124,8 @@
             </li>
             <li class="item col-xs-6 col-md-3 rts">
                 <figure>
-                    <img src="images/gallery/DSC_0723-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0723-Edit.jpg" class="more-details" data-title="Red Table Setup">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0723-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0723-Edit.jpg" class="more-details" data-title="Red Table Setup">Enlarge</a>
                     <figcaption>
                         <h4><span>Red </span> Table Setup</h4>
                     </figcaption>
@@ -134,8 +134,8 @@
 
             <li class="item col-xs-6 col-md-6 views">
                 <figure>
-                    <img src="images/gallery/DSC_0602-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0602-Edit.jpg" class="more-details" data-title="Outside View">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0602-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0602-Edit.jpg" class="more-details" data-title="Outside View">Enlarge</a>
                     <figcaption>
                         <h4><span>Outside</span> View</h4>
                     </figcaption>
@@ -143,8 +143,8 @@
             </li>
             <li class="item col-xs-6 col-md-3 views">
                 <figure>
-                    <img src="images/gallery/DSC_0626-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0626-Edit.jpg" class="more-details" data-title="Outside View">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0626-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0626-Edit.jpg" class="more-details" data-title="Outside View">Enlarge</a>
                     <figcaption>
                         <h4><span>Outside</span> View</h4>
                     </figcaption>
@@ -152,8 +152,8 @@
             </li>
             <li class="item col-xs-6 col-md-3 rts">
                 <figure>
-                    <img src="images/gallery/DSC_0720-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0720-Edit.jpg" class="more-details" data-title="Red Table Setup">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0720-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0720-Edit.jpg" class="more-details" data-title="Red Table Setup">Enlarge</a>
                     <figcaption>
                         <h4><span>Red </span> Table Setup</h4>
                     </figcaption>
@@ -161,8 +161,8 @@
             </li>
             <li class="item col-xs-6 col-md-3 bts">
                 <figure>
-                    <img src="images/gallery/DSC_0729-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0729-Edit.jpg" class="more-details" data-title="Blue Table Setup">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0729-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0729-Edit.jpg" class="more-details" data-title="Blue Table Setup">Enlarge</a>
                     <figcaption>
                         <h4><span>Blue</span> Table Setup</h4>
                     </figcaption>
@@ -170,8 +170,8 @@
             </li>
             <li class="item col-xs-6 col-md-3 views">
                 <figure>
-                    <img src="images/gallery/DSC_0733-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0733-Edit.jpg" class="more-details" data-title="Hall Entrance">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0733-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0733-Edit.jpg" class="more-details" data-title="Hall Entrance">Enlarge</a>
                     <figcaption>
                         <h4><span>Hall</span> Entrance</h4>
                     </figcaption>
@@ -179,8 +179,8 @@
             </li>
             <li class="item col-xs-6 col-md-3 rts">
                 <figure>
-                    <img src="images/gallery/DSC_0736-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0736-Edit.jpg" class="more-details" data-title="Red Table Setup">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0736-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0736-Edit.jpg" class="more-details" data-title="Red Table Setup">Enlarge</a>
                     <figcaption>
                         <h4><span>Red </span> Table Setup</h4>
                     </figcaption>
@@ -188,8 +188,8 @@
             </li>
             <li class="item col-xs-6 col-md-3 oe">
                 <figure>
-                    <img src="images/gallery/DSC_0915-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0915-Edit.jpg" class="more-details" data-title="Ongoing Event">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0915-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0915-Edit.jpg" class="more-details" data-title="Ongoing Event">Enlarge</a>
                     <figcaption>
                         <h4><span>Ongoing</span> Event</h4>
                     </figcaption>
@@ -197,8 +197,8 @@
             </li>
             <li class="item col-xs-6 col-md-3 bts">
                 <figure>
-                    <img src="images/gallery/DSC_0737-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0737-Edit.jpg" class="more-details" data-title="Blue Table Setup">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0737-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0737-Edit.jpg" class="more-details" data-title="Blue Table Setup">Enlarge</a>
                     <figcaption>
                         <h4><span>Blue</span> Table Setup</h4>
                     </figcaption>
@@ -206,8 +206,8 @@
             </li>
             <li class="item col-xs-6 col-md-3 views">
                 <figure>
-                    <img src="images/gallery/IMG-20160107-WA0002.jpg" alt="11"/>
-                    <a href="images/gallery/IMG-20160107-WA0002.jpg" class="more-details" data-title="Ongoing Event">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/IMG-20160107-WA0002.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/IMG-20160107-WA0002.jpg" class="more-details" data-title="Ongoing Event">Enlarge</a>
                     <figcaption>
                         <h4><span>Outside</span> View</h4>
                     </figcaption>
@@ -215,8 +215,8 @@
             </li>
             <li class="item col-xs-6 col-md-6 views">
                 <figure>
-                    <img src="images/gallery/DSC_0748-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0748-Edit.jpg" class="more-details" data-title="Stage FrontView">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0748-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0748-Edit.jpg" class="more-details" data-title="Stage FrontView">Enlarge</a>
                     <figcaption>
                         <h4><span>Stage</span> FrontView</h4>
                     </figcaption>
@@ -224,8 +224,8 @@
             </li>
             <li class="item col-xs-6 col-md-6 views">
                 <figure>
-                    <img src="images/gallery/IMG-20160107-WA0006.jpg" alt="11"/>
-                    <a href="images/gallery/IMG-20160107-WA0006.jpg" class="more-details" data-title="Ongoing Event">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/IMG-20160107-WA0006.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/IMG-20160107-WA0006.jpg" class="more-details" data-title="Ongoing Event">Enlarge</a>
                     <figcaption>
                         <h4><span>Outside</span> View</h4>
                     </figcaption>
@@ -234,8 +234,8 @@
 
             <li class="item col-xs-6 col-md-3 views">
                 <figure>
-                    <img src="images/gallery/DSC_0750-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0750-Edit.jpg" class="more-details" data-title="Stage FrontView">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0750-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0750-Edit.jpg" class="more-details" data-title="Stage FrontView">Enlarge</a>
                     <figcaption>
                         <h4><span>Stage</span> FrontView</h4>
                     </figcaption>
@@ -244,8 +244,8 @@
 
             <li class="item col-xs-6 col-md-3 oe">
                 <figure>
-                    <img src="images/gallery/DSC_0952-Edit.jpg" alt="11"/>
-                    <a href="images/gallery/DSC_0952-Edit.jpg" class="more-details" data-title="Ongoing Event">Enlarge</a>
+                    <img src="../../components/assets/img/gallery/DSC_0952-Edit.jpg" alt="11"/>
+                    <a href="../../components/assets/img/gallery/DSC_0952-Edit.jpg" class="more-details" data-title="Ongoing Event">Enlarge</a>
                     <figcaption>
                         <h4><span>Ongoing</span> Event</h4>
                     </figcaption>
@@ -256,7 +256,7 @@
     </div>
 </div>
 <!-- End of Gallery Container -->
-<script type="text/javascript" src="assets/js/template.js"></script>
+<script type="text/javascript" src="../../components/assets/js/template.js"></script>
 <script>
     // Main Slider
     jQuery("#main-slider").owlCarousel({

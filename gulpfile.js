@@ -1,19 +1,23 @@
 var gulp = require('gulp'),
-    concat = require('gulp-concat'),
     gutil = require('gulp-util'),
+    concat = require('gulp-concat'),
     gulpif = require('gulp-if'),
+    imagemin = require('gulp-imagemin'),
+    pngcrush = require('imagemin-pngcrush'),
     uglify = require('gulp-uglify'),
     minifyHTML = require('gulp-minify-html'),
     connect = require('gulp-connect');
 //browserify = require('gulp-browserify');
 
 
+
+
 var env,
     jsSources,
     htmlSources,
-    outputDir;
+    assets;
 
-outputDir = 'builds/development/assets/js/';
+assets = 'builds/development/assets/js/';
 
 env = process.env.NODE_ENV || 'production';
 
@@ -25,27 +29,27 @@ if (env==='development') {
 
 
 jsSources = [
-    outputDir + 'jquery.js',
-    outputDir + 'owl.carousel.min.js',
-    outputDir + 'isotope.pkgd.min.js',
-    outputDir + 'jquery.magnific-popup.min.js',
-    outputDir + 'imagesloaded.pkgd.min.js',
-    outputDir + 'helper.js',
-    outputDir + 'template.js',
-    outputDir + 'jquery.blockUI.js',
-    outputDir + 'lib/angular/angular.min.js',
-    outputDir + 'lib/angular/angular-ui-router.min.js',
-    outputDir + 'lib/angular/angular-resource.min.js',
-    outputDir + 'lib/angular/angular-animate.min.js',
-    outputDir + 'app.js',
-    outputDir + 'directives.js',
-    outputDir + 'controllers/index.js',
-    outputDir + 'controllers/about.js',
-    outputDir + 'controllers/facilities.js',
-    outputDir + 'controllers/gallery.js',
-    outputDir + 'controllers/podcast.js',
-    outputDir + 'controllers/contact.js',
-    outputDir + 'controllers/booking.js'
+    assets + 'jquery.js',
+    assets + 'owl.carousel.min.js',
+    assets + 'isotope.pkgd.min.js',
+    assets + 'jquery.magnific-popup.min.js',
+    assets + 'imagesloaded.pkgd.min.js',
+    assets + 'helper.js',
+    assets + 'template.js',
+    assets + 'jquery.blockUI.js',
+    assets + 'lib/angular/angular.min.js',
+    assets + 'lib/angular/angular-ui-router.min.js',
+    assets + 'lib/angular/angular-resource.min.js',
+    assets + 'lib/angular/angular-animate.min.js',
+    assets + 'app.js',
+    assets + 'directives.js',
+    assets + 'controllers/index.js',
+    assets + 'controllers/about.js',
+    assets + 'controllers/facilities.js',
+    assets + 'controllers/gallery.js',
+    assets + 'controllers/podcast.js',
+    assets + 'controllers/contact.js',
+    assets + 'controllers/booking.js'
 ];
 
 gulp.task('log', function() {
@@ -86,7 +90,7 @@ gulp.task('index', function() {
 //        svgoPlugins: [{ removeViewBox: false }],
 //        use: [pngcrush()]
 //    })))
-//        .pipe(gulpif(env === 'production', gulp.dest(outputDir + 'images')))
+//        .pipe(gulpif(env === 'production', gulp.dest(assets + 'images')))
 //        .pipe(connect.reload())
 //});
 
