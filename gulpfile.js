@@ -94,13 +94,13 @@ gulp.task('css', function() {
 gulp.task('views', function() {
     gulp.src('builds/development/views/*.php')
         .pipe(gulpif(env === 'production', minifyHTML()))
-        .pipe(gulpif(env === 'production', gulp.dest(outputMain + 'views/')))
+        .pipe(gulpif(env === 'production', gulp.dest(outputMain + 'views/')));
 });
 
 gulp.task('layout', function() {
     gulp.src('builds/development/layout/*.php')
         .pipe(gulpif(env === 'production', minifyHTML()))
-        .pipe(gulpif(env === 'production', gulp.dest(outputMain + 'layout/')))
+        .pipe(gulpif(env === 'production', gulp.dest(outputMain + 'layout/')));
 });
 
 gulp.task('index', function() {
