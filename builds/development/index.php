@@ -19,7 +19,7 @@
 -->
 
         <!-- The above css files will be joined as the one below  -->
-        <link href="assets/css/styles.css" id="style_components" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/all_styles.css" id="style_components" rel="stylesheet" type="text/css"/>
 
 
 
@@ -83,7 +83,7 @@
             <div class="inner-container container">
                 <div class="left-sec col-sm-4 col-md-2 clearfix">
                     <!-- Top Logo -->
-                    <div id="top-logo"><a href="#/index"><img src="../../components/assets/img/horlikins/logo.png"></img></a></div>
+                    <div id="top-logo"><a href="#/index"><img src="assets/img/horlikins/logo.png"></img></a></div>
             </div>
             <div class="right-sec col-sm-8 col-md-10 clearfix">
 

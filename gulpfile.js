@@ -88,7 +88,7 @@ gulp.task('js', function() {
 
 gulp.task('css', function() {
     return gulp.src(cssSources)
-        .pipe(concat('styles.css'))
+        .pipe(concat('all_styles.css'))
         .pipe(gulpif(env === 'production', cleanCSS({compatibility: 'ie8'})))
         .pipe(gulp.dest(outputMain + 'assets/css'));
 });
