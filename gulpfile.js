@@ -17,9 +17,11 @@ var env,
     jsSources,
     cssSources,
     htmlSources,
-    assets;
+    assets,
+    dev;
 
-assets = 'components/assets/';
+assets = 'builds/development/assets/';
+dev = 'builds/development/';
 
 env = process.env.NODE_ENV || 'development';
 
@@ -92,7 +94,7 @@ gulp.task('css', function() {
 });
 
 gulp.task('views', function() {
-    gulp.src('builds/development/views/*.php')
+    gulp.src(dev + 'views/*.php')
         .pipe(gulpif(env === 'production', minifyHTML()))
         .pipe(gulpif(env === 'production', gulp.dest(outputMain + 'views/')));
 });
