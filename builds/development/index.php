@@ -10,35 +10,48 @@
         <meta name="author" content="Ken Waribo, kenneth.waribo@cinfores.com">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
         <link href='http://fonts.googleapis.com/css?family=Lobster%7cRaleway:400,300,100,600,700,800' rel='stylesheet' type='text/css'><!-- Attach Google fonts -->
-        <link rel="stylesheet" type="text/css" href="../../components/assets/css/styles_2.css"><!-- Attach the main stylesheet file -->
-        <link rel="stylesheet" type="text/css" href="../../components/assets/css/custom.css"><!-- Attach the main stylesheet file -->
-        <!---->
 
 
-        <link href="../../components/assets/spinner/components-md.css" id="style_components" rel="stylesheet" type="text/css"/>
+        <!--
+<link rel="stylesheet" type="text/css" href="assets/css/styles_2.css">
+<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+<link href="assets/css/spinner/components-md.css" id="style_components" rel="stylesheet" type="text/css"/>
+-->
+
+        <!-- The above css files will be joined as the one below  -->
+        <link href="assets/css/styles.css" id="style_components" rel="stylesheet" type="text/css"/>
+
+
+
 
 
         <!--     START  JS INCLUDES-->
-        <script type="text/javascript" src="../../components/assets/js/jquery.js"></script>
-        <script type="text/javascript" src="../../components/assets/js/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="../../components/assets/js/isotope.pkgd.min.js"></script>
-        <script type="text/javascript" src="../../components/assets/js/jquery.magnific-popup.min.js"></script>
-        <script type="text/javascript" src="../../components/assets/js/imagesloaded.pkgd.min.js"></script>
+        <!--
+<script type="text/javascript" src="../../components/assets/js/jquery.js"></script>
+<script type="text/javascript" src="../../components/assets/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="../../components/assets/js/isotope.pkgd.min.js"></script>
+<script type="text/javascript" src="../../components/assets/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="../../components/assets/js/imagesloaded.pkgd.min.js"></script>
 
 
-        <script type="text/javascript" src="../../components/assets/js/helper.js"></script>
-        <script type="text/javascript" src="../../components/assets/js/template.js"></script>
-        <script type="text/javascript" src="../../components/assets/js/jquery.blockUI.js"></script>
+<script type="text/javascript" src="../../components/assets/js/helper.js"></script>
+<script type="text/javascript" src="../../components/assets/js/template.js"></script>
+<script type="text/javascript" src="../../components/assets/js/jquery.blockUI.js"></script>
 
-        <script src="../../components/assets/js/lib/angular/angular.min.js"></script>
-        <script src="../../components/assets/js/lib/angular/angular-ui-router.min.js"></script>
+<script src="../../components/assets/js/lib/angular/angular.min.js"></script>
+<script src="../../components/assets/js/lib/angular/angular-ui-router.min.js"></script>
+
+-->
         <!--<script src="../../components/assets/js/lib/angular/angular-route.min.js"></script>-->
-        <script src="../../components/assets/js/lib/angular/angular-resource.min.js"></script>
-        <script src="../../components/assets/js/lib/angular/angular-animate.min.js"></script>
-        <script src="../../components/assets/dirPagination.js"></script>
+        <!--
+
+<script src="../../components/assets/js/lib/angular/angular-resource.min.js"></script>
+<script src="../../components/assets/js/lib/angular/angular-animate.min.js"></script>
+<script src="../../components/assets/dirPagination.js"></script>
+-->
 
         <!--     END  JS INCLUDES -->
-
+        <script src="assets/js/scripts_top.js"></script>
     </head>
     <body class="homepage trans-header sticky white-datepicker">
 
@@ -178,19 +191,31 @@
 
 <!-- End of js files and codes -->
 
+<!--
 <script src="../../components/assets/js/app.js"></script>
 <script src="../../components/assets/js/directives.js"></script>
+-->
+
+
 <!--        <script src="../../components/assets/spinner/metronic.js" type="text/javascript"></script>-->
+
+<!--
 <script src="../../components/assets/js/controllers/index.js"></script>
 <script src="../../components/assets/js/controllers/about.js"></script>
 <script src="../../components/assets/js/controllers/facilities.js"></script>
 <script src="../../components/assets/js/controllers/gallery.js"></script>
 <script src="../../components/assets/js/controllers/podcast.js"></script>
+-->
+
+
 <!--        <script src="../../components/assets/js/controllers/guest.js"></script>-->
+<!--
+
 <script src="../../components/assets/js/controllers/contact.js"></script>
 <script src="../../components/assets/js/controllers/booking.js"></script>
+-->
 
 <!-- End of js files and codes -->
-
+<script src="assets/js/scripts_bottom.js"></script>
 </body>
 </html>
