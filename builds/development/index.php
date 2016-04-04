@@ -8,7 +8,7 @@
     <!-- Website's title ( it will be shown in browser's tab ), Change the website's title based on your Hotel information -->
     <meta name="description" content="Horlikins Event Center OFficial Website">
     <!-- Add your Hotel short description -->
-    <meta name="keywords" content="Horlikins, Event, Center, OFficial, Website">
+    <meta name="keywords" content="Horlikins, Event, Center, OFficial, Website, event place, halls, conference halls, horlikins, event centers, portharcourt">
     <!-- Add some Keywords based on your Hotel and your business and separate them by comma -->
     <meta name="author" content="Ken Waribo, kenneth.waribo@cinfores.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
