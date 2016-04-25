@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
-<head>
+    <head>
 
-    <!--       <base href="/">-->
-    <meta charset="UTF-8">
-    <title>Horlikins Event Center</title>
-    <!-- Website's title ( it will be shown in browser's tab ), Change the website's title based on your Hotel information -->
-    <meta name="description" content="Horlikins Event Center OFficial Website">
-    <!-- Add your Hotel short description -->
-    <meta name="keywords" content="Horlikins, Event, Center, OFficial, Website, event place, halls, conference halls, horlikins, event centers, portharcourt">
-    <!-- Add some Keywords based on your Hotel and your business and separate them by comma -->
-    <meta name="author" content="Ken Waribo, kenneth.waribo@cinfores.com">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
-    <link href='http://fonts.googleapis.com/css?family=Lobster%7cRaleway:400,300,100,600,700,800' rel='stylesheet'
-          type='text/css'>
-    <!-- Attach Google fonts -->
+        <!--       <base href="/">-->
+        <meta charset="UTF-8">
+        <title>Horlikins Event Center</title>
+        <!-- Website's title ( it will be shown in browser's tab ), Change the website's title based on your Hotel information -->
+        <meta name="description" content="Horlikins Event Center OFficial Website">
+        <!-- Add your Hotel short description -->
+        <meta name="keywords" content="Horlikins, Event, Center, OFficial, Website, event place, halls, conference halls, horlikins, event centers, portharcourt">
+        <!-- Add some Keywords based on your Hotel and your business and separate them by comma -->
+        <meta name="author" content="Ken Waribo, kenneth.waribo@cinfores.com">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
+        <link href='http://fonts.googleapis.com/css?family=Lobster%7cRaleway:400,300,100,600,700,800' rel='stylesheet'
+              type='text/css'>
+        <!-- Attach Google fonts -->
 
 
-    <!--
+        <!--
 <link rel="stylesheet" type="text/css" href="assets/css/styles_2.css">
 <link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 <link href="assets/css/spinner/components-md.css" id="style_components" rel="stylesheet" type="text/css"/>
 -->
 
-    <!-- The above css files will be joined as the one below  -->
-    <link href="assets/css/all_styles.css" id="style_components" rel="stylesheet" type="text/css"/>
+        <!-- The above css files will be joined as the one below  -->
+        <link href="assets/css/all_styles.css" id="style_components" rel="stylesheet" type="text/css"/>
 
 
-    <!--     START  JS INCLUDES-->
-    <!--
+        <!--     START  JS INCLUDES-->
+        <!--
 <script type="text/javascript" src="../../components/assets/js/jquery.js"></script>
 <script type="text/javascript" src="../../components/assets/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="../../components/assets/js/isotope.pkgd.min.js"></script>
@@ -44,61 +44,60 @@
 <script src="../../components/assets/js/lib/angular/angular-ui-router.min.js"></script>
 
 -->
-    <!--<script src="../../components/assets/js/lib/angular/angular-route.min.js"></script>-->
-    <!--
-
+        <!--
+<script src="../../components/assets/js/lib/angular/angular-route.min.js"></script>
 <script src="../../components/assets/js/lib/angular/angular-resource.min.js"></script>
 <script src="../../components/assets/js/lib/angular/angular-animate.min.js"></script>
 <script src="../../components/assets/dirPagination.js"></script>
 -->
 
-    <!--     END  JS INCLUDES -->
-    <script src="assets/js/scripts_top.js"></script>
-</head>
-<body class="homepage trans-header sticky white-datepicker">
+        <!--     END  JS INCLUDES -->
+        <script src="assets/js/scripts_top.js"></script>
+    </head>
+    <body class="homepage trans-header sticky white-datepicker">
 
-<!-- BEGIN PAGE SPINNER -->
-<div ng-spinner-bar class="page-spinner-bar">
-    <div class="bounce1"></div>
-    <div class="bounce2"></div>
-    <div class="bounce3"></div>
-</div>
-<!-- END PAGE SPINNER -->
-
-
-<!-- Top Header -->
-<div id="top-header">
-    <div class="inner-container container">
-        <!-- Contact Info -->
-        <ul class="contact-info list-inline">
-            <li><i class="fa fa-phone"></i>+234 908 7819045</li>
-            <li><i class="fa fa-envelope-o"></i>info@horlikins.com</li>
-        </ul>
-    </div>
-</div>
-<!---->
-
-<!-- End of Top Header -->
-
-<!-- Main Header -->
-<header id="main-header">
-    <div class="inner-container container">
-        <div class="left-sec col-sm-4 col-md-2 clearfix">
-            <!-- Top Logo -->
-            <div id="top-logo"><a href="#/index"><img src="assets/img/horlikins/logo.png"></img></a></div>
+        <!-- BEGIN PAGE SPINNER -->
+        <div ng-spinner-bar class="page-spinner-bar">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
         </div>
-        <div class="right-sec col-sm-8 col-md-10 clearfix">
+        <!-- END PAGE SPINNER -->
 
-            <!-- Book Now and Main Menu -->
-            <div ng-include="'views/nav.php'"></div>
 
+        <!-- Top Header -->
+        <div id="top-header">
+            <div class="inner-container container">
+                <!-- Contact Info -->
+                <ul class="contact-info list-inline">
+                    <li><i class="fa fa-phone"></i>+234 908 7819045</li>
+                    <li><i class="fa fa-envelope-o"></i>info@horlikins.com</li>
+                </ul>
+            </div>
         </div>
-        <!-- Menu Handel -->
-        <div id="main-menu-handle" class="hidden-md hidden-lg"><i class="fa fa-bars"></i></div>
-    </div>
-    </div>
+        <!---->
+
+        <!-- End of Top Header -->
+
+        <!-- Main Header -->
+        <header id="main-header">
+            <div class="inner-container container">
+                <div class="left-sec col-sm-4 col-md-2 clearfix">
+                    <!-- Top Logo -->
+                    <div id="top-logo"><a href="#/index"><img src="assets/img/horlikins/logo.png"></img></a></div>
+            </div>
+            <div class="right-sec col-sm-8 col-md-10 clearfix">
+
+                <!-- Book Now and Main Menu -->
+                <div ng-include="'views/nav.php'"></div>
+
+            </div>
+            <!-- Menu Handel -->
+            <div id="main-menu-handle" class="hidden-md hidden-lg"><i class="fa fa-bars"></i></div>
+            </div>
+        </div>
     <div id="mobile-menu-container" class="hidden-md hidden-lg"></div>
-</header>
+    </header>
 <!-- End of Main Header -->
 
 <!-- <div id="Page_Content" ng-view>  -->
@@ -130,7 +129,6 @@
         </div>
         <div class="widget col-xs-6 col-md-3">
             <h4>Newsletter</h4>
-<?php ?>
             <div class="widget-content">
                 <div class="desc">
                     Get our giveaways, offers and updates delivered to your inbox. <br>
@@ -149,14 +147,14 @@
             <a class="twitter-timeline" href="https://twitter.com/horlikin" data-widget-id="707125269652447233">Tweets
                 by @horlikin</a>
             <script>!function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = p + "://platform.twitter.com/widgets.js";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, "script", "twitter-wjs");</script>
+    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+    if (!d.getElementById(id)) {
+        js = d.createElement(s);
+        js.id = id;
+        js.src = p + "://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }
+}(document, "script", "twitter-wjs");</script>
         </div>
 
         <div class="widget col-md-3 get-in-touch">
@@ -175,8 +173,7 @@
                     <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
                     <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
                     <!-- <li><a href="#"><i class="fa fa-skype"></i></a></li>-->
-                    <li><a href="https://www.youtube.com/channel/UCs4Z5F1dlUq19pYJUxmEZcw" target="_blank"><i
-                                class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCs4Z5F1dlUq19pYJUxmEZcw" target="_blank"><i class="fa fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -199,8 +196,7 @@
         </ul>
     </nav>
     <div class="copy-right">
-        &copy; <?php echo date("Y"); ?> Horlikins Event Center. All Rights Reserved. Powered by <a
-            href="http://www.cinfores.com">Cinfores Limited</a>
+        &copy; <?php echo date("Y"); ?> Horlikins Event Center. All Rights Reserved. Powered by <a href="http://www.cinfores.com" target="_blank">Cinfores Limited</a>
     </div>
 </footer>
 <!-- End of Footer -->
