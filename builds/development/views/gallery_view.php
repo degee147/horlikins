@@ -16,7 +16,7 @@
             </div>
         </div>
         <ul class="image-main-box clearfix">
-              <li class="item col-xs-6 col-md-6 cul">
+            <li class="item col-xs-6 col-md-3 cul">
                 <figure>
                     <img data-src="assets/img/gallery/cultural-day/6.jpg" alt="11"/>
                     <a href="assets/img/gallery/cultural-day/6.jpg" class="more-details" data-title="Cultural Day">Enlarge</a>
@@ -44,7 +44,7 @@
                     </figcaption>
                 </figure>
             </li>
-    <li class="item col-xs-6 col-md-3 conf">
+            <li class="item col-xs-6 col-md-3 conf">
                 <figure>
                     <img data-src="assets/img/gallery/conference/3.jpg" alt="11"/>
                     <a href="assets/img/gallery/conference/3.jpg" class="more-details" data-title="Conference/Seminar">Enlarge</a>
@@ -64,7 +64,7 @@
                 </figure>
             </li>
 
-            <li class="item col-xs-6 col-md-6 conf">
+            <li class="item col-xs-6 col-md-3 conf">
                 <figure>
                     <img data-src="assets/img/gallery/conference/1.jpg" alt="11"/>
                     <a href="assets/img/gallery/conference/1.jpg" class="more-details" data-title="Conference/Seminar">Enlarge</a>
@@ -146,7 +146,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li class="item col-xs-6 col-md-6 cul">
+            <li class="item col-xs-6 col-md-3 cul">
                 <figure>
                     <img data-src="assets/img/gallery/cultural-day/3.jpg" alt="11"/>
                     <a href="assets/img/gallery/cultural-day/3.jpg" class="more-details" data-title="Cultural Day">Enlarge</a>
@@ -155,7 +155,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li class="item col-xs-6 col-md-6 rec">
+            <li class="item col-xs-6 col-md-3 rec">
                 <figure>
                     <img data-src="assets/img/gallery/receptions/6.jpg" alt="11"/>
                     <a href="assets/img/gallery/receptions/6.jpg" class="more-details" data-title="Wedding Reception">Enlarge</a>
@@ -164,7 +164,7 @@
                     </figcaption>
                 </figure>
             </li>
-            <li class="item col-xs-6 col-md-6 cul">
+            <li class="item col-xs-6 col-md-3 cul">
                 <figure>
                     <img data-src="assets/img/gallery/cultural-day/2.jpg" alt="11"/>
                     <a href="assets/img/gallery/cultural-day/2.jpg" class="more-details" data-title="Cultural Day">Enlarge</a>
