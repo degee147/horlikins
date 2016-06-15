@@ -1,57 +1,63 @@
 <div angular-lazy-load>
-<!-- Top Slider and Booking form -->
-<div id="home-top-section">
+    <!-- Top Slider and Booking form -->
+    <div id="home-top-section">
 
-    <!-- Main Slider -->
-    <div id="main-slider">
-        <div class="items">
-            <img data-src="assets/img/slider/crystal-silver-chairs.jpg" alt="3"/><!-- Change the URL section based on your image\'s name -->
-        </div>
-        <div class="items">
-            <img data-src="assets/img/slider/outside-view.jpg" alt="3"/>
-        </div>
-        <!--    <div class="items">
+        <!-- Main Slider -->
+        <div id="main-slider">
+            <div class="items">
+                <img data-src="assets/img/slider/crystal-silver-chairs.jpg" alt="3"/><!-- Change the URL section based on your image\'s name -->
+            </div>
+            <div class="items">
+                <img data-src="assets/img/slider/car-pack-new.jpg" alt="3"/><!-- Change the URL section based on your image\'s name -->
+            </div>
+            <div class="items">
+                <img data-src="assets/img/slider/outside-view.jpg" alt="3"/>
+            </div>
+            <div class="items">
+                <img data-src="assets/img/slider/interior-new.jpg" alt="3"/>
+            </div>
+            <!--    <div class="items">
 <img data-src="images/horlikins/img3.jpg" alt="4"/>
 </div>
 <div class="items">
 <img data-src="assets/img/slider/2.jpg" alt="2"/>
 </div> -->
-    </div>
+        </div>
 
-    <!-- Booking Form -->
-    <div class="booking-form-container container">
-        <div id="main-booking-form" class="style-2">
-            <h2>Book a <span>Facility</span></h2>
-            <form class="booking-form clearfix" action="#"><!-- Do Not remove the classes -->
-                <div class="input-daterange clearfix">
-                    <div class="booking-fields col-xs-6 col-md-12">
-                        <input placeholder="Choose check in date" class="datepicker-fields check-in" type="text" name="start" id="chkIndate" /><!-- Date Picker field ( Do Not remove the "datepicker-fields" class ) -->
-                        <i class="fa fa-calendar"></i><!-- Date Picker Icon -->
+        <!-- Booking Form -->
+        <div class="booking-form-container container">
+            <div id="main-booking-form" class="style-2">
+                <h2>Book a <span>Facility</span></h2>
+                <form class="booking-form clearfix" action="#"><!-- Do Not remove the classes -->
+                    <div class="input-daterange clearfix">
+                        <div class="booking-fields col-xs-6 col-md-12">
+                            <input placeholder="Choose check in date" class="datepicker-fields check-in" type="text" name="start" id="chkIndate" /><!-- Date Picker field ( Do Not remove the "datepicker-fields" class ) -->
+                            <i class="fa fa-calendar"></i><!-- Date Picker Icon -->
+                        </div>
+                        <div class="booking-fields col-xs-6 col-md-12">
+                            <input placeholder="Choose check out date" class="datepicker-fields check-out" type="text" name="end"
+                                   id="chkOutdate"/>
+                            <i class="fa fa-calendar"></i>
+                        </div>
                     </div>
-                    <div class="booking-fields col-xs-6 col-md-12">
-                        <input placeholder="Choose check out date" class="datepicker-fields check-out" type="text" name="end"
-                               id="chkOutdate"/>
-                        <i class="fa fa-calendar"></i>
-                    </div>
-                </div>
-                <div class="booking-fields col-xs-6 col-md-12" id="divToPutSelect">
-                    <select name="facSelect" id="SelectFacilities" ng-selected="resp.facility">
-                        <option value="">Facilities</option>
-                        <option ng-repeat="resp in indexData" value="{{resp.fid}}">{{resp.facility}}</option>
-                    </select>
+                    <div class="booking-fields col-xs-6 col-md-12" id="divToPutSelect">
+                        <select name="facSelect" id="SelectFacilities" ng-selected="resp.facility">
+                            <option value="">Facilities</option>
+                            <option ng-repeat="resp in indexData" value="{{resp.fid}}">{{resp.facility}}</option>
+                        </select>
 
-                </div>
-                <div class="booking-button-container">
-                    <!--                    <input class="btn btn-default" value="Check Availability" type="submit"/>-->
-                    <!-- Submit button -->
-                    <a class="btn btn-default btn-block checkAvail" ng-click="CheckAvailabilty()">Check Availability</a>
-                </div>
-                <div id="response" style="margin-top: 20px;"></div>
-            </form>
+                    </div>
+                    <div class="booking-button-container">
+                        <!--                    <input class="btn btn-default" value="Check Availability" type="submit"/>-->
+                        <!-- Submit button -->
+                        <a class="btn btn-default btn-block checkAvail" ng-click="CheckAvailabilty()">Check Availability</a>
+                    </div>
+                    <div id="response" style="margin-top: 20px;"></div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-<!-- End of Top Slider and Booking form -->
+    <!-- End of Top Slider and Booking form -->
 
     <!-- Luxury Rooms -->
     <div id="luxury-rooms">
@@ -97,7 +103,7 @@
         <h2>Take a <span>Peek</span></h2><!-- Title -->
     </div>
 
-        <div ng-include="'views/gallery_view.php'"></div>
+    <div ng-include="'views/gallery_view.php'"></div>
 
 </div>
 <script type="text/javascript" src="assets/js/template.js"></script>
