@@ -43,12 +43,12 @@
 <script src="../../components/assets/js/lib/angular/angular.min.js"></script>
 <script src="../../components/assets/js/lib/angular/angular-ui-router.min.js"></script>
 
--->
-        <!--
+
 <script src="../../components/assets/js/lib/angular/angular-route.min.js"></script>
 <script src="../../components/assets/js/lib/angular/angular-resource.min.js"></script>
 <script src="../../components/assets/js/lib/angular/angular-animate.min.js"></script>
 <script src="../../components/assets/dirPagination.js"></script>
+
 -->
 
         <!--     END  JS INCLUDES -->
@@ -147,14 +147,14 @@
             <a class="twitter-timeline" href="https://twitter.com/horlikin" data-widget-id="707125269652447233">Tweets
                 by @horlikin</a>
             <script>!function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-    if (!d.getElementById(id)) {
-        js = d.createElement(s);
-        js.id = id;
-        js.src = p + "://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }
-}(document, "script", "twitter-wjs");</script>
+                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");</script>
         </div>
 
         <div class="widget col-md-3 get-in-touch">
@@ -191,7 +191,7 @@
             <li><a ng-href="#/facilities">Facilities</a></li>
             <li><a ng-href="#/gallery">Gallery</a></li>
             <!--<li><a href="guest-book.php">Guest Book</a></li>-->
-            <li><a href="http://eventcalender.develop.cinfores.com" class="">Login</a></li>
+            <li><a href="http://fm.academy.cinfores.com" class="">Login</a></li>
             <li><a ng-href="#/contact">Contact</a></li>
         </ul>
     </nav>
