@@ -103,8 +103,8 @@
         <h2>Take a <span>Peek</span></h2><!-- Title -->
     </div>
 
-    <div ng-include="'views/gallery_view.php'"></div>
-
+<!--    <div ng-include="'views/gallery_view.php'"></div>-->
+    <?php include('gallery_view.php'); ?>
 </div>
 <script type="text/javascript" src="assets/js/template.js"></script>
 <script>

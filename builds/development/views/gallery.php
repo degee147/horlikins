@@ -13,7 +13,8 @@
     <!-- Page Content -->
     <div class="page-content col-md-12">
 
-        <div ng-include="'views/gallery_view.php'"></div>
+<!--        <div ng-include="'views/gallery_view.php'"></div>-->
+        <?php include('gallery_view.php'); ?>
     </div>
 
 </div>
