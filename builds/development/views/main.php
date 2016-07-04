@@ -1,9 +1,6 @@
-
-  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-
-   <div angular-lazy-load>
+<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+<div angular-lazy-load>
     <!-- Top Slider and Booking form -->
     <div id="home-top-section">
 
@@ -65,81 +62,81 @@
     <!-- End of Top Slider and Booking form -->
 
     <div class="container">
-        <h2>Modal Example</h2>
+<!--        <h2>Modal Example</h2>-->
         <!-- Trigger the modal with a button -->
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+<!--        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>-->
 
         <!-- Modal -->
         <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-
-                <!-- Modal content-->
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
+                        <h4 class="modal-title">50% Discount Offering</h4>
                     </div>
                     <div class="modal-body">
-                        <p>Some text in the modal.</p>
+<!--                        <p>This is a large modal.</p>-->
+                        <img src="assets/img/discount.jpg" alt="">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
-
-            </div>
-        </div>
-
-    </div>
-
-    <!-- Luxury Rooms -->
-    <div id="luxury-rooms">
-        <!-- Heading box -->
-        <div class="heading-box">
-            <h2>Our <span>Facilities</span></h2><!-- Title -->
-            <div class="subtitle">Best facilities at best prices</div><!-- Subtitle -->
-        </div>
-
-
-        <!-- Room Box Container -->
-        <div class="room-container container" id="facilityDiv">
-            <!-- Room box -->
-            <div class="room-boxes" dir-paginate="resp in indexData | itemsPerPage: 2" ng-class="{right: $index % 2 === 0}">
-                <img src="http://paago.eventcalender.develop.cinfores.com/uploads/{{resp.image1}}" alt="{{resp.facility}}" class="room-img">
-                <div class="room-details col-xs-6 col-md-4">
-                    <div class="title">{{resp.facility}}</div><!-- Room title -->
-                    <div class="description"><!-- Room Description -->
-                        {{resp.fdesc}}
-                    </div>
-                    <a class="btn btn-default" ui-sref="booking({facId: resp.fid, facName: resp.facility})" ng-click="showLoad()">Book Now</a>
-                    <!-- <a class="btn btn-default" ng-href="#/booking/{{resp.fid}}/{{resp.facility}}">Book Now</a>-->
-                </div>
-                <div class="price-container col-xs-6 col-md-8">
-                    <div class="price">
-                        <span> &#8358; {{resp.costdays | number:0}}</span>
-                        only
-                    </div>
-                </div>
-
-            </div>
-            <div class="pagination-box" style="margin-bottom: -80px;">
-                <dir-pagination-controls></dir-pagination-controls>
             </div>
         </div>
     </div>
-    <!-- End of Luxury Rooms -->
 
-    <!-- Special Packages -->
-    <!-- End of Special Packages -->
+</div>
 
+<!-- Luxury Rooms -->
+<div id="luxury-rooms">
+    <!-- Heading box -->
     <div class="heading-box">
-        <h2>Take a <span>Peek</span></h2><!-- Title -->
+        <h2>Our <span>Facilities</span></h2><!-- Title -->
+        <div class="subtitle">Best facilities at best prices</div><!-- Subtitle -->
     </div>
 
-    <!--    <div ng-include="'views/gallery_view.php'"></div>-->
-    <?php include('gallery_view.php'); ?>
+
+    <!-- Room Box Container -->
+    <div class="room-container container" id="facilityDiv">
+        <!-- Room box -->
+        <div class="room-boxes" dir-paginate="resp in indexData | itemsPerPage: 2" ng-class="{right: $index % 2 === 0}">
+            <img src="http://paago.eventcalender.develop.cinfores.com/uploads/{{resp.image1}}" alt="{{resp.facility}}" class="room-img">
+            <div class="room-details col-xs-6 col-md-4">
+                <div class="title">{{resp.facility}}</div><!-- Room title -->
+                <div class="description"><!-- Room Description -->
+                    {{resp.fdesc}}
+                </div>
+                <a class="btn btn-default" ui-sref="booking({facId: resp.fid, facName: resp.facility})" ng-click="showLoad()">Book Now</a>
+                <!-- <a class="btn btn-default" ng-href="#/booking/{{resp.fid}}/{{resp.facility}}">Book Now</a>-->
+            </div>
+            <div class="price-container col-xs-6 col-md-8">
+                <div class="price">
+                    <span> &#8358; {{resp.costdays | number:0}}</span>
+                    only
+                </div>
+            </div>
+
+        </div>
+        <div class="pagination-box" style="margin-bottom: -80px;">
+            <dir-pagination-controls></dir-pagination-controls>
+        </div>
+    </div>
+</div>
+<!-- End of Luxury Rooms -->
+
+<!-- Special Packages -->
+<!-- End of Special Packages -->
+
+<div class="heading-box">
+    <h2>Take a <span>Peek</span></h2><!-- Title -->
+</div>
+
+<!--    <div ng-include="'views/gallery_view.php'"></div>-->
+<?php include('gallery_view.php'); ?>
 </div>
 <script type="text/javascript" src="assets/js/template.js"></script>
+
 <script>
     // Main Slider
     jQuery("#main-slider").owlCarousel({
@@ -149,5 +146,12 @@
         autoPlay : !0,
         mouseDrag : !1,
         touchDrag : !1,
+    });
+
+    $( document ).ready(function() {
+
+         //   console.log("READY");
+            $("#myModal").modal();
+
     });
 </script>

@@ -4,9 +4,12 @@ function blinker() {
 
 angular.element(document).ready(function () {
 
-    // console.log("READY");
+//
+//    console.log("READY");
+//    $("#myModal").modal();
 
 });
+
 
 myApp.controller('IndexController', ['$scope','$rootScope','$stateParams','$http', function($scope, $rootScope, $stateParams, $http) {
 

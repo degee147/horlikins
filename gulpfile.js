@@ -45,7 +45,8 @@ jsTopSources = [
     assets + 'js/lib/angular/angular-animate.min.js',
     assets + 'plugins/ngPaginate/angular-animate.min.js',
     assets + 'plugins/ngPaginate/dirPagination.js',
-    assets + 'plugins/imgLazyload/angular-lazy-loader.min.js'
+    assets + 'plugins/imgLazyload/angular-lazy-loader.min.js',
+//    assets + 'js/bootstrap/bootstrap.min.js'
 ];
 
 jsBottomSources = [

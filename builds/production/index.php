@@ -5,6 +5,7 @@
         <!--       <base href="/">-->
         <meta charset="UTF-8">
         <title>Horlikins Event Center</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Website's title ( it will be shown in browser's tab ), Change the website's title based on your Hotel information -->
         <meta name="description" content="Horlikins Event Center OFficial Website">
         <!-- Add your Hotel short description -->
@@ -232,5 +233,6 @@
 
 <!-- End of js files and codes -->
 <script src="assets/js/scripts_bottom.js"></script>
+<!--<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
 </body>
 </html>
